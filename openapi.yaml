@@ -2,7 +2,10 @@ openapi: 3.1.1
 info:
   title: OSRM API v5.22.0
   description: Open Source Routing Machine Models
-  version: "0.0.2"
+  version: "0.0.3"
+  license:
+    name: BSD-3-Clause
+    url: https://opensource.org/licenses/BSD-3-Clause
 paths: {}
 components:
   schemas:
@@ -322,9 +325,9 @@ components:
         text:
           type: string
         type:
-          type: string
+          $ref: "#/components/schemas/ManeuverType"
         modifier:
-          type: string
+          $ref: "#/components/schemas/ManeuverModifier"
         components:
           type: array
           items:
