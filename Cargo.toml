@@ -1,19 +1,23 @@
 [package]
-name = "osrm-openapi-models"
-version = "0.0.1"
+name = "osrm"
+version = "0.0.2"
 authors = ["OpenAPI Generator team and contributors"]
 description = "Open Source Routing Machine Models"
-repository = "https://github.com/Rallista/osrm-openapi-rs"
-license = "BSD-3-Clause"
-edition = "2024"
+# Override this license by providing a License Object in the OpenAPI.
+license = "Unlicense"
+edition = "2021"
 
 [dependencies]
 serde = { version = "^1.0", features = ["derive"] }
 serde_json = "^1.0"
 serde_repr = "^0.1"
 url = "^2.5"
-uuid = { version = "^1.8", features = ["serde", "v4"] }
-reqwest = { version = "^0.12", features = ["json", "multipart"] }
+reqwest = { version = "^0.12", default-features = false, features = ["json", "multipart"] }
+
+[features]
+default = ["native-tls"]
+native-tls = ["reqwest/native-tls"]
+rustls-tls = ["reqwest/rustls-tls"]
 
 [lints.clippy]
 empty_docs = "allow"

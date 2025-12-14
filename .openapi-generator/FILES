@@ -10,6 +10,8 @@ docs/BannerContentComponentsInner.md
 docs/BannerInstruction.md
 docs/Intersection.md
 docs/Lane.md
+docs/ManeuverModifier.md
+docs/ManeuverType.md
 docs/NearestResponse.md
 docs/NearestWaypoint.md
 docs/Route.md
@@ -35,6 +37,8 @@ src/models/banner_content_components_inner.rs
 src/models/banner_instruction.rs
 src/models/intersection.rs
 src/models/lane.rs
+src/models/maneuver_modifier.rs
+src/models/maneuver_type.rs
 src/models/mod.rs
 src/models/nearest_response.rs
 src/models/nearest_waypoint.rs
