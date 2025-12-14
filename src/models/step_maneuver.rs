@@ -25,6 +25,8 @@ pub struct StepManeuver {
     pub modifier: Option<models::ManeuverModifier>,
     #[serde(rename = "exit", skip_serializing_if = "Option::is_none")]
     pub exit: Option<i32>,
+    #[serde(rename = "instruction", skip_serializing_if = "Option::is_none")]
+    pub instruction: Option<String>,
 }
 
 impl StepManeuver {
@@ -36,6 +38,7 @@ impl StepManeuver {
             r#type: None,
             modifier: None,
             exit: None,
+            instruction: None,
         }
     }
 }

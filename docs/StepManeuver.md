@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **r#type** | Option<[**models::ManeuverType**](ManeuverType.md)> |  | [optional]
 **modifier** | Option<[**models::ManeuverModifier**](ManeuverModifier.md)> |  | [optional]
 **exit** | Option<**i32**> |  | [optional]
+**instruction** | Option<**String**> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

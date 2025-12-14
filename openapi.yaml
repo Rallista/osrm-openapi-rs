@@ -267,6 +267,8 @@ components:
           $ref: "#/components/schemas/ManeuverModifier"
         exit:
           type: integer
+        instruction:
+          type: string
     Intersection:
       type: object
       properties:
