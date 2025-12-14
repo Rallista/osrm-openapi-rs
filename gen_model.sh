@@ -1,7 +1,7 @@
 openapi-generator generate \
   -i openapi.yaml \
   -g rust \
-  --additional-properties=packageName=osrm \
+  --additional-properties=packageName=osrm-openapi-models \
   -o ./
 
   # --global-property models \

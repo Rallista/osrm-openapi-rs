@@ -1,10 +1,9 @@
 [package]
-name = "osrm"
+name = "osrm-openapi-models"
 version = "0.0.3"
 authors = ["OpenAPI Generator team and contributors"]
 description = "Open Source Routing Machine Models"
-# Override this license by providing a License Object in the OpenAPI.
-license = "Unlicense"
+license = "BSD-3-Clause"
 edition = "2021"
 
 [dependencies]
