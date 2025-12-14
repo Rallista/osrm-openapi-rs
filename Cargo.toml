@@ -1,6 +1,6 @@
 [package]
 name = "osrm-openapi-models"
-version = "0.0.4"
+version = "0.0.5"
 authors = ["OpenAPI Generator team and contributors"]
 description = "Extended Open Source Routing Machine Models. This includes default OSRM models, plus optional fields like MaxSpeed."
 license = "BSD-3-Clause"

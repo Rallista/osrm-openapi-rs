@@ -2,7 +2,7 @@ openapi: 3.1.1
 info:
   title: OSRM API v5.22.0
   description: Extended Open Source Routing Machine Models. This includes default OSRM models, plus optional fields like MaxSpeed.
-  version: "0.0.4"
+  version: "0.0.5"
   license:
     name: BSD-3-Clause
     url: https://opensource.org/licenses/BSD-3-Clause
@@ -267,6 +267,8 @@ components:
           $ref: "#/components/schemas/ManeuverModifier"
         exit:
           type: integer
+        instruction:
+          type: string
     Intersection:
       type: object
       properties:
