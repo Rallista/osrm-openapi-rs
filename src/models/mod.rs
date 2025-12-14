@@ -18,6 +18,8 @@ pub mod maneuver_modifier;
 pub use self::maneuver_modifier::ManeuverModifier;
 pub mod maneuver_type;
 pub use self::maneuver_type::ManeuverType;
+pub mod max_speed;
+pub use self::max_speed::MaxSpeed;
 pub mod nearest_response;
 pub use self::nearest_response::NearestResponse;
 pub mod nearest_waypoint;

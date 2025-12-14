@@ -1,8 +1,8 @@
 openapi: 3.1.1
 info:
   title: OSRM API v5.22.0
-  description: Open Source Routing Machine Models
-  version: "0.0.3"
+  description: Extended Open Source Routing Machine Models. This includes default OSRM models, plus optional fields like MaxSpeed.
+  version: "0.0.4"
   license:
     name: BSD-3-Clause
     url: https://opensource.org/licenses/BSD-3-Clause
@@ -238,6 +238,10 @@ components:
           items:
             type: number
             format: double
+        maxspeed:
+          type: array
+          items:
+            $ref: "#/components/schemas/MaxSpeed"
         metadata:
           type: object
           properties:
@@ -346,6 +350,24 @@ components:
             type: string
         valid:
           type: boolean
+    MaxSpeed:
+      description: The speed limit between the pair of coordinates.
+      type: object
+      properties:
+        speed: { type: integer }
+        unit:
+          type: string
+          enum: [km/h, mph]
+          description:
+            The unit of measure for the speed. Always included if speed
+            is present.
+        unknown:
+          type: boolean
+          description: True if the speed limit is not known.
+        none:
+          type: boolean
+          description: "True if there is no explicit speed limit
+            (ex: some Autobahn sections)"
     Waypoint:
       type: object
       properties:

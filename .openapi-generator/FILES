@@ -12,6 +12,7 @@ docs/Intersection.md
 docs/Lane.md
 docs/ManeuverModifier.md
 docs/ManeuverType.md
+docs/MaxSpeed.md
 docs/NearestResponse.md
 docs/NearestWaypoint.md
 docs/Route.md
@@ -39,6 +40,7 @@ src/models/intersection.rs
 src/models/lane.rs
 src/models/maneuver_modifier.rs
 src/models/maneuver_type.rs
+src/models/max_speed.rs
 src/models/mod.rs
 src/models/nearest_response.rs
 src/models/nearest_waypoint.rs

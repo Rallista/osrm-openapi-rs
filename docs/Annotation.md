@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **nodes** | Option<**Vec<i32>**> |  | [optional]
 **weight** | Option<**Vec<i32>**> |  | [optional]
 **speed** | Option<**Vec<f64>**> |  | [optional]
+**maxspeed** | Option<[**Vec<models::MaxSpeed>**](MaxSpeed.md)> |  | [optional]
 **metadata** | Option<[**models::AnnotationMetadata**](Annotation_metadata.md)> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
